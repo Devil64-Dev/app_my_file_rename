@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">My File Rename</string>
+    <string name="welcome_des">Bienvenido, para saber como funciona puedes ir a Menu>Ayuda. Para usar la app solo
+    mira la lista de opciones y selecciona una operación y divierte.</string>
+</resources>
