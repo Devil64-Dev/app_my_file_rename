@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">My File Rename</string>
-    <string name="welcome_text"></string>
+    <string name="welcome_text">Welcome, for help about app use see Menu>Help. For app just see options list and select one, fun.</string>
 </resources>
