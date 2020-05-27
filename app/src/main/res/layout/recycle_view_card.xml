@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/card_margin_top"
+    android:layout_marginRight="@dimen/card_margin_left_right"
+    android:layout_marginLeft="@dimen/card_margin_left_right"
+    card_view:cardCornerRadius="@dimen/card_round_corner"
+    card_view:cardElevation="@dimen/card_elevation">
 
-</LinearLayout>
+    <!-- Parent of view for card element -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_layout_padding"
+        android:orientation="vertical">
+
+        <!-- title for option -->
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/card_text_title" />
+
+        <!-- description for option -->
+        <TextView
+            android:id="@+id/card_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/card_text_des"
+            android:textColor="@color/card_des"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
