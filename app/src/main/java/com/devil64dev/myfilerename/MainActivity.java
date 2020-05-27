@@ -4,24 +4,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    private String [] myDataTitle = {"Replace characters", "Insert characters", "Add auto-numeration"};
-    private String [] myDataDescription = {"Replace specific char of string by a new string or char.",
-    "Insert specific char or string in specific position", "Add auto-numeration start on 0 up to n, the use must specific position."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // String resources for Adapter -> MyAdapter -> list_options
+        Resources res_list_options = getResources();  // Resources instance for RecycleView -> list_options
+        // Content of RecycleView
+        String [] myDataTitle = res_list_options.getStringArray(R.array.options_title);  // Title
+        String [] myDataDescription = res_list_options.getStringArray(R.array.options_description);  // Description
+
+        // List for show features or options of the app
         RecyclerView list_options = findViewById(R.id.recycleView_options);
         list_options.setHasFixedSize(true);
+
+        // LayoutManager for RecycleView -> list_options
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         list_options.setLayoutManager(layoutManager);
 
+        // Adapter for RecycleView -> list_options
         RecyclerView.Adapter adapter = new MyAdapter(myDataTitle, myDataDescription);
         list_options.setAdapter(adapter);
-
     }
 }
