@@ -3,4 +3,7 @@
     <color name="colorPrimary">#263238</color>
     <color name="colorPrimaryDark">#102027</color>
     <color name="colorAccent">#2186f3</color>
+
+    <!-- Colors for CardView options -->
+    <color name="card_des">#aaaaaa</color>
 </resources>
