@@ -58,12 +58,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         description.setText(dataDescription[position]);
 
         CardView option = holder.view.findViewById(R.id.card_options);
-        option.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                
-            }
-        });
+        option.setOnClickListener( new OpenOption(holder.view.getContext()));
     }
 
     // Return the size of your dataset (invoked by the layout manager)
