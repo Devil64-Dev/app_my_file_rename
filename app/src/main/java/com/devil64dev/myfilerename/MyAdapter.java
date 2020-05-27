@@ -1,11 +1,16 @@
 package com.devil64dev.myfilerename;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
@@ -42,15 +47,23 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        TextView title = holder.view.findViewById(R.id.card_title);
+
+        final TextView title = holder.view.findViewById(R.id.card_title);
         title.setText(dataTitles[position]);
 
         TextView description = holder.view.findViewById(R.id.card_description);
         description.setText(dataDescription[position]);
 
+        CardView option = holder.view.findViewById(R.id.card_options);
+        option.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
     }
 
     // Return the size of your dataset (invoked by the layout manager)

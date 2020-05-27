@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,5 +34,6 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.Adapter adapter = new MyAdapter(myDataTitle, myDataDescription);
         list_options.setAdapter(adapter);
 
+        //Adding click adapter;
     }
 }
