@@ -14,12 +14,9 @@
 
     <!-- DESCRIPTION ARRAY -->
     <string-array name="options_description">
-        <item>Replace specifics chars or string in file name (this action replace all coincidences by a char).\
-            Is the best option for delete some unnecessary chars.</item>
-        <item>Insert specifics chars in a specifics position, characters position starts in 0 to n.\
-            This option not gonna replace characters just add a character in specific position moving the other to new position.</item>
-        <item>Add auto-numeration to all file names (you must specific the start number and star position).\
-            You can specific the initial digits (example: \'0\' 0, 1, 2..: \'00\' 00, 01, 02..: etc.).</item>
+        <item>Replace specifics chars or string in file name (this action replace all coincidences by a char).</item>
+        <item>Insert specifics chars in a specifics position, characters position starts in 0 to n.</item>
+        <item>Add auto-numeration to all file names (you must specific the start number and star position).</item>
         <item>Extra features for the app, some features are marked as in develop.</item>
     </string-array>
 </resources>
