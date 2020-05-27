@@ -21,4 +21,5 @@
         <item>Agrega autonumeración a todos los nombres de archivo (debes especificar el numero con el que inicia y la posición de los numeros).</item>
         <item>Caracteristicas extras para la aplicación, algunas caracteristias en desarrollo no estaran disponibles para su uso.</item>
     </string-array>
+    <string name="ar_some_files">1. Agrega o selecciona algunos archivos</string>
 </resources>

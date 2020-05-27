@@ -19,4 +19,7 @@
         <item>Add auto-numeration to all file names (you must specific the start number and star position).</item>
         <item>Extra features for the app, some features are marked as in develop.</item>
     </string-array>
+
+    <!-- DESCRIPTION STEPS FOR activity_replace -->>
+    <string name="ar_some_files">1. Add or select some files</string>
 </resources>
