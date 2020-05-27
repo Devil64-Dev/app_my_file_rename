@@ -8,20 +8,17 @@
     <!-- Array of strings for options and descriptions -->
     <!-- OPTIONS ARRAY -->
     <string-array name="options_title">
-        <item>Replace chars</item>
-        <item>Insert chars</item>
-        <item>Add auto-numeration</item>
-        <item>Extra features</item>
+        <item>Reemplazar caracteres</item>
+        <item>Insertar caracteres</item>
+        <item>Agregar autonumeración</item>
+        <item>Caracteristicas extra.</item>
     </string-array>
 
     <!-- DESCRIPTION ARRAY -->
     <string-array name="options_description">
-        <item>Replace specifics chars or string in file name (this action replace all coincidences by a char).\
-            Is the best option for delete some unnecessary chars.</item>
-        <item>Insert specifics chars in a specifics position, characters position starts in 0 to n.\
-            This option not gonna replace characters just add a character in specific position moving the other to new position.</item>
-        <item>Add auto-numeration to all file names (you must specific the start number and star position).\
-            You can specific the initial digits (example: \'0\' 0, 1, 2..: \'00\' 00, 01, 02..: etc.).</item>
-        <item>Extra features for the app, some features are marked as in develop.</item>
+        <item>Reemplaca caracteres of cadenas especificas en el nombre del archivo (Esta acción reemplaza todas las aparicions de la cadena o cáracter).</item>
+        <item>Inserta caracteres o cadenas a partir de una posición especifica, la posición de los caracteres empieza desde 0 a n.</item>
+        <item>Agrega autonumeración a todos los nombres de archivo (debes especificar el numero con el que inicia y la posición de los numeros).</item>
+        <item>Caracteristicas extras para la aplicación, algunas caracteristias en desarrollo no estaran disponibles para su uso.</item>
     </string-array>
 </resources>
