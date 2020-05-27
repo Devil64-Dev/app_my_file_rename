@@ -31,5 +31,6 @@ public class MainActivity extends AppCompatActivity {
         // Adapter for RecycleView -> list_options
         RecyclerView.Adapter adapter = new MyAdapter(myDataTitle, myDataDescription);
         list_options.setAdapter(adapter);
+
     }
 }
