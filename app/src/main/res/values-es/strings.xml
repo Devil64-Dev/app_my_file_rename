@@ -3,4 +3,5 @@
     <string name="app_name">My File Rename</string>
     <string name="welcome_text">Bienvenido, para saber como funciona puedes ir a Menu>Ayuda. Para usar la app solo
     mira la lista de opciones y selecciona una operación y divierte.</string>
+    <string name="example_text">Texto de Ejemplo</string>
 </resources>
