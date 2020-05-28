@@ -36,4 +36,5 @@
     <string name="ar_step_one_button_select_file">Seleccionar archivos…</string>
     <string name="ar_step_one_edit_path_auto_fill_hint">/sdcard</string>
     <string name="ar_step_one_button_save_path">Listo</string>
+    <string name="path_not_exist_err">The path not exist</string>
 </resources>

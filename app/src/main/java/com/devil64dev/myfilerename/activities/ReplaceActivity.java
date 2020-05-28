@@ -2,17 +2,25 @@ package com.devil64dev.myfilerename.activities;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Environment;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.devil64dev.myfilerename.R;
+
+import java.io.File;
 
 public class ReplaceActivity extends AppCompatActivity {
     private int step_one_options;
@@ -65,9 +73,34 @@ public class ReplaceActivity extends AppCompatActivity {
         });
 
         // Some
-        if (step_one_options==1){
+        if (true){
             EditText editPath = findViewById(R.id.ar_step_one_edit_path);
-            //Button btn = findViewById(R.id.ar_step_one_save_path);
+            editPath.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    v.addTextChangedListener(new TextWatcher() {
+                        @Override
+                        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                        }
+
+                        @Override
+                        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                        }
+
+                        @Override
+                        public void afterTextChanged(Editable s) {
+
+                        }
+                    });
+                    if (!(new File(v.getText().toString()).exists())) {
+                        Toast.makeText(v.getContext(), R.string.path_not_exist_err, Toast.LENGTH_SHORT).show();
+                    }
+                    return false;
+                }
+            });
+            Button savePath = findViewById(R.id.ar_step_one_save_path);
+
         }else{
 
         }

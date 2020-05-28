@@ -55,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical"
+            android:visibility="invisible"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -73,7 +74,7 @@
                 android:inputType="textUri" />
 
             <Button
-                android:id="@+id/save"
+                android:id="@+id/ar_step_one_save_path"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ar_step_one_button_save_path"/>
@@ -84,6 +85,7 @@
 
     <!--TODO: Add step2 and step3 etc..-->
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
