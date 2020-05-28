@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.devil64dev.myfilerename.R;
 
 public class ReplaceActivity extends AppCompatActivity {
+    private int step_one_options;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,7 @@ public class ReplaceActivity extends AppCompatActivity {
 
                 switch (checkedId){
                     case R.id.ar_step_one_radio_path:
+                        step_one_options = 1;
                         if (!(path_to_directory.getVisibility()==View.VISIBLE)){
                             path_to_directory.setVisibility(View.VISIBLE);
                         }
@@ -49,6 +51,7 @@ public class ReplaceActivity extends AppCompatActivity {
                         break;
 
                     case R.id.ar_step_one_radio_select:
+                        step_one_options = 2;
                         if (!(select_files.getVisibility()==View.VISIBLE)){
                             select_files.setVisibility(View.VISIBLE);
                         }
@@ -60,5 +63,13 @@ public class ReplaceActivity extends AppCompatActivity {
                 }
             }
         });
+
+        // Some
+        if (step_one_options==1){
+            EditText editPath = findViewById(R.id.ar_step_one_edit_path);
+            //Button btn = findViewById(R.id.ar_step_one_save_path);
+        }else{
+
+        }
     }
 }

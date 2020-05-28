@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:visibility="invisible">
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,6 +71,13 @@
                 android:autofillHints="@string/ar_step_one_edit_path_auto_fill_hint"
                 android:hint="@string/ar_step_one_edit_path_hint"
                 android:inputType="textUri" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ar_step_one_button_save_path"/>
+
         </LinearLayout>
     </RelativeLayout>  <!-- End parent of widget for each option in RadioGroup -->
     <!-- End layout for step1 -->
