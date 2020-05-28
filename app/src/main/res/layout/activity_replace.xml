@@ -1,11 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/ar_layout_margin">
+    android:layout_margin="@dimen/ar_layout_margin"
+    android:orientation="vertical">
 
+    <!-- Layout for step one -->
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ar_steps_title_paddingBottom"
+        android:text="@string/ar_step_one_title"/>
+
+    <!-- Options for select source of files -->
+    <RadioGroup
+        android:id="@+id/ar_step_one_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Option 'write path' -->
+        <RadioButton
+            android:id="@+id/ar_step_one_radio_path"
+            android:text="@string/ar_step_one_radio_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Option 'select files' -->
+        <RadioButton
+            android:id="@+id/ar_step_one_radio_select"
+            android:text="@string/ar_step_one_radio_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>  <!-- End of Group Options-->
+
+    <!-- Parent for widgets for each option in RadioGroup -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/ar_step_view_after_options_paddingTop">
+
+        <!-- Widget for select files -->
+
+        <Button
+            android:id="@+id/ar_step_one_button_select_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_step_one_button_select_file"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/ar_step_one_parent_pat"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ar_step_one_label_cd_edit_path"
+                android:labelFor="@id/ar_step_one_edit_path"
+                android:text="@string/ar_step_one_label_edit_path" />
+
+            <!-- Widget for writing path for files source -->
+            <EditText
+                android:id="@+id/ar_step_one_edit_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/ar_step_one_edit_path_auto_fill_hint"
+                android:hint="@string/ar_step_one_edit_path_hint"
+                android:inputType="textUri" />
+        </LinearLayout>
+    </RelativeLayout>  <!-- End parent of widget for each option in RadioGroup -->
+    <!-- End layout for step1 -->
+
+    <!--TODO: Add step2 and step3 etc..-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 </LinearLayout>

@@ -21,5 +21,14 @@
         <item>Agrega autonumeración a todos los nombres de archivo (debes especificar el numero con el que inicia y la posición de los numeros).</item>
         <item>Caracteristicas extras para la aplicación, algunas caracteristias en desarrollo no estaran disponibles para su uso.</item>
     </string-array>
-    <string name="ar_some_files">1. Agrega o selecciona algunos archivos</string>
+    <string name="ar_step_one_title">1. Agrega o selecciona algunos archivos</string>
+    <!-- Text for checkbox and radio buttons -->
+    <!-- step 1 -->
+    <string name="ar_step_one_radio_path">Especificar ruta</string>
+    <string name="ar_step_one_radio_select">Seleccionar archivos</string>
+    <string name="ar_step_one_label_edit_path">Especificar ruta de los archivos</string>
+    <string name="ar_step_one_label_cd_edit_path">Ruta del directorio</string>
+    <string name="ar_step_one_edit_path_hint">Ejemplo: /sdcard</string>
+    <string name="ar_step_one_button_select_file">Seleccionar archivos…</string>
+    <string name="ar_step_one_edit_path_auto_fill_hint">/sdcard</string>
 </resources>

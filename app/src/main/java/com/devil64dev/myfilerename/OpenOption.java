@@ -3,6 +3,7 @@ package com.devil64dev.myfilerename;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,5 +19,7 @@ public class OpenOption implements View.OnClickListener {
     public void onClick(View v) {
         Intent intent = new Intent(context, ReplaceActivity.class);
         context.startActivity(intent);
+        TextView view = v.findViewById(R.id.card_title);
+        Toast.makeText(context, view.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 }

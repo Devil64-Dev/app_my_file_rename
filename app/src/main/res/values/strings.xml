@@ -19,7 +19,15 @@
         <item>Add auto-numeration to all file names (you must specific the start number and star position).</item>
         <item>Extra features for the app, some features are marked as in develop.</item>
     </string-array>
-
     <!-- DESCRIPTION STEPS FOR activity_replace -->>
-    <string name="ar_some_files">1. Add or select some files</string>
+    <string name="ar_step_one_title">1. Add or select some files</string>
+    <!-- Text for checkbox and radio buttons -->
+    <!-- step 1 -->
+    <string name="ar_step_one_radio_path">Path to files</string>
+    <string name="ar_step_one_radio_select">Select files</string>
+    <string name="ar_step_one_label_edit_path">Specific path to directory</string>
+    <string name="ar_step_one_label_cd_edit_path">Directory path</string>
+    <string name="ar_step_one_edit_path_hint">Example: /sdcard</string>
+    <string name="ar_step_one_button_select_file">Select file</string>
+    <string name="ar_step_one_edit_path_auto_fill_hint">/sdcard</string>
 </resources>

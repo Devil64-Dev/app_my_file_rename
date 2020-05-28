@@ -16,4 +16,8 @@
     <!-- Dimens for activity_replace  -->
     <!-- ar -> activity_replace-->
     <dimen name="ar_layout_margin">16dp</dimen>
+    <dimen name="ar_steps_title_paddingBottom">14dp</dimen>  <!-- Dimen for padding bottom for all titles of steps -->
+
+    <!-- step * -->
+    <dimen name="ar_step_view_after_options_paddingTop">16dp</dimen>
 </resources>
