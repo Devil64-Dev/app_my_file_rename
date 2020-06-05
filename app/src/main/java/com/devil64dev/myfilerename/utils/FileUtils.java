@@ -64,4 +64,17 @@ public class FileUtils {
         return list_files;
     }
 
+    // this function give help to make path for nav
+    private String make_path = "";
+    private String makePath(String path){
+        make_path += make_path + "/";
+        return make_path;
+    }
+
+    public void restartMakePath (){
+        this.make_path = "";
+    }
+    public void setStartMakePath(String path){
+        this.make_path = path;
+    }
 }
